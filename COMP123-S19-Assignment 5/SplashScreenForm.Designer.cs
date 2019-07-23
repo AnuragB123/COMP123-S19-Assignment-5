@@ -1,6 +1,6 @@
 ﻿namespace COMP123_S19_Assignment_5
 {
-    partial class Form1
+    partial class SplashScreenForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SplashScreenForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(482, 453);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Name = "SplashScreenForm";
+            this.Text = "Splash Screen";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -16,7 +16,7 @@ namespace COMP123_S19_Assignment_5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SplashScreenForm());
         }
     }
 }
