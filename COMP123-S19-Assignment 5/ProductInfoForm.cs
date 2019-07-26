@@ -17,11 +17,9 @@ namespace COMP123_S19_Assignment_5
             InitializeComponent();
         }
 
-       
-
-        private void NextButton_Click(object sender, EventArgs e)
+        private void Exiting_ApplicationButtons_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
