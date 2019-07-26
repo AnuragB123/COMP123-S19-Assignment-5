@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreenForm));
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.SplashScreenImagePictureBox = new System.Windows.Forms.PictureBox();
             this.MessageLabel = new System.Windows.Forms.Label();
+            this.SplashTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.SplashScreenImagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +66,11 @@
             this.MessageLabel.Text = "We Sell for Less!";
             this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // SplashTimer
+            // 
+            this.SplashTimer.Interval = 3000;
+            this.SplashTimer.Tick += new System.EventHandler(this.SplashTimer_Tick);
+            // 
             // SplashScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
@@ -77,6 +84,7 @@
             this.Name = "SplashScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Splash Screen";
+            this.Load += new System.EventHandler(this.SplashScreenForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SplashScreenImagePictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -87,6 +95,7 @@
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.PictureBox SplashScreenImagePictureBox;
         private System.Windows.Forms.Label MessageLabel;
+        private System.Windows.Forms.Timer SplashTimer;
     }
 }
 

@@ -39,59 +39,65 @@
             // 
             // HardwareListLabel
             // 
-            this.HardwareListLabel.Location = new System.Drawing.Point(13, 13);
+            this.HardwareListLabel.Location = new System.Drawing.Point(10, 10);
+            this.HardwareListLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HardwareListLabel.Name = "HardwareListLabel";
-            this.HardwareListLabel.Size = new System.Drawing.Size(493, 48);
+            this.HardwareListLabel.Size = new System.Drawing.Size(389, 37);
             this.HardwareListLabel.TabIndex = 0;
             this.HardwareListLabel.Text = "Dollar Computer Hardware List";
             // 
             // HardwareDataGridView
             // 
             this.HardwareDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.HardwareDataGridView.Location = new System.Drawing.Point(13, 64);
+            this.HardwareDataGridView.Location = new System.Drawing.Point(10, 49);
+            this.HardwareDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HardwareDataGridView.Name = "HardwareDataGridView";
             this.HardwareDataGridView.RowTemplate.Height = 24;
-            this.HardwareDataGridView.Size = new System.Drawing.Size(1754, 465);
+            this.HardwareDataGridView.Size = new System.Drawing.Size(1385, 355);
             this.HardwareDataGridView.TabIndex = 1;
             // 
             // SelectionLabel
             // 
-            this.SelectionLabel.Location = new System.Drawing.Point(13, 576);
+            this.SelectionLabel.Location = new System.Drawing.Point(10, 440);
+            this.SelectionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SelectionLabel.Name = "SelectionLabel";
-            this.SelectionLabel.Size = new System.Drawing.Size(254, 43);
+            this.SelectionLabel.Size = new System.Drawing.Size(201, 33);
             this.SelectionLabel.TabIndex = 2;
             this.SelectionLabel.Text = "Your Selection:";
             // 
             // YourSelectionTextBox
             // 
-            this.YourSelectionTextBox.Location = new System.Drawing.Point(273, 576);
+            this.YourSelectionTextBox.Location = new System.Drawing.Point(216, 440);
+            this.YourSelectionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.YourSelectionTextBox.Name = "YourSelectionTextBox";
-            this.YourSelectionTextBox.Size = new System.Drawing.Size(798, 45);
+            this.YourSelectionTextBox.Size = new System.Drawing.Size(631, 36);
             this.YourSelectionTextBox.TabIndex = 3;
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(1180, 566);
+            this.CancelButton.Location = new System.Drawing.Point(932, 432);
+            this.CancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(238, 65);
+            this.CancelButton.Size = new System.Drawing.Size(188, 50);
             this.CancelButton.TabIndex = 4;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(1500, 563);
+            this.NextButton.Location = new System.Drawing.Point(1184, 430);
+            this.NextButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(238, 65);
+            this.NextButton.Size = new System.Drawing.Size(188, 50);
             this.NextButton.TabIndex = 5;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
             // 
             // SelectForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1779, 653);
+            this.ClientSize = new System.Drawing.Size(1395, 498);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.CancelButton);
@@ -99,8 +105,8 @@
             this.Controls.Add(this.SelectionLabel);
             this.Controls.Add(this.HardwareDataGridView);
             this.Controls.Add(this.HardwareListLabel);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Your Computer";

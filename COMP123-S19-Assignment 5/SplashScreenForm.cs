@@ -16,5 +16,17 @@ namespace COMP123_S19_Assignment_5
         {
             InitializeComponent();
         }
+
+        private void SplashScreenForm_Load(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = true;
+        }
+
+        private void SplashTimer_Tick(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = false;
+            Program.forms[FormName.START_FORM].Show();
+            this.Hide();
+        }
     }
 }
