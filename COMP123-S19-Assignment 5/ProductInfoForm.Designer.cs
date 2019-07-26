@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductInfoForm));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ProductInfoMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,23 +77,23 @@
             this.SelectAnotherProductButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.ProductInfoMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.SpecificationsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // ProductInfoMenuStrip
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ProductInfoMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ProductInfoMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1385, 32);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.ProductInfoMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.ProductInfoMenuStrip.Name = "ProductInfoMenuStrip";
+            this.ProductInfoMenuStrip.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
+            this.ProductInfoMenuStrip.Size = new System.Drawing.Size(1385, 32);
+            this.ProductInfoMenuStrip.TabIndex = 0;
+            this.ProductInfoMenuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -240,6 +240,7 @@
             this.ProductInfoGroupBox.Controls.Add(this.PlatformDataLabel);
             this.ProductInfoGroupBox.Controls.Add(this.PlatformLabel);
             this.ProductInfoGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductInfoGroupBox.ForeColor = System.Drawing.Color.Black;
             this.ProductInfoGroupBox.Location = new System.Drawing.Point(244, 120);
             this.ProductInfoGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProductInfoGroupBox.Name = "ProductInfoGroupBox";
@@ -628,15 +629,15 @@
             this.Controls.Add(this.CostLabel);
             this.Controls.Add(this.ConditionLabel);
             this.Controls.Add(this.ProductIDLabel);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.ProductInfoMenuStrip);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.ProductInfoMenuStrip;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Info Form";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.ProductInfoMenuStrip.ResumeLayout(false);
+            this.ProductInfoMenuStrip.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
             this.SpecificationsGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -646,7 +647,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip ProductInfoMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
